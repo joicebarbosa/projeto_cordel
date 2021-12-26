@@ -23,16 +23,26 @@ html, body {
 }
 
 header {
-  background-color: black;
+  background-color: rgb(17, 16, 16);
   color: white;
   text-align: center;
 }
 
 header > h1 {
-  padding-top: 50px; 
+  padding-top: 20px; 
   font-variant: small-caps; /* deixar letras maiusculas com a primeira maior que as demais */
   font-family: var(--fonte3);
   font-size: 8vw; /*fonte se adapta a largura da tela*/
+}
+
+header > img {
+  background-size: cover;
+  width: 200px;
+  display: block;
+  opacity: 60%;
+  
+
+
 }
 
 header > p {
@@ -59,6 +69,10 @@ section {
   font-size: 3.5vw;
 }
 
+section > p {
+  padding-bottom: 1.5em;
+}
+
 section.normal {
   background-color: white;
   color: rgba(0, 0, 0, 0.651);
@@ -68,13 +82,31 @@ section.normal {
 section.imagem {
   background-color: rgba(0, 0, 0, 0.349);
   color: white;
+  box-shadow: inset 6px 6px 13px 0px black; /*sombra na imagem*/
+  background-attachment: fixed ; /*fixar a imagem*/
 
+}
+
+section#img01 {
+  background-image: url('../imagens/background001.jpg');
+  background-position:right center;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.575); /*sombra da fonte*/
+  background-size: cover; /*ajustar imagem*/ 
+
+  }
+
+section#img02 {
+  background-image: url('../imagens/background002.jpg');
+  text-shadow: 2px 2px 0px black;
+  background-position: center;
+  background-size: cover;
 }
 
 section.imagem > p {
   background-color: rgba(0, 0, 0, 0.315);
   display: inline-block; /*texto se adapta ao tamanho da caixa*/
   padding: 5px;
+
 }
 
 
