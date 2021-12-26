@@ -36,17 +36,14 @@ header > h1 {
 }
 
 header > img {
-  background-size: cover;
-  width: 200px;
-  display: ;
-  opacity: 60%;
-  
+  width: 100px;
+  opacity: 90%;
+  padding-top: 5px;
 
-
-}
+  }
 
 header > p {
-  padding-bottom: 50px;
+  padding-bottom: 10px;
  
 }
 
